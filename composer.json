@@ -8,9 +8,9 @@
         }
     ],
     "type": "library",
-    "licence": "MIT",
+    "license": "MIT",
     "require": {
-        "illuminate/support": "^6.12"
+        "illuminate/support": "~5.8.0|^6.0"
     },
     "extra": {
         "laravel": {
