@@ -1,0 +1,22 @@
+{
+    "name": "thetomnewton/blade-times",
+    "description": "Blade directives for working with Carbon",
+    "authors": [
+        {
+            "name": "Tom Newton",
+            "email": "newton.thomasjames@gmail.com"
+        }
+    ],
+    "type": "library",
+    "licence": "MIT",
+    "require": {
+        "illuminate/support": "^6.12"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Thetomnewton\\BladeTimes\\ServiceProvider"
+            ]
+        }
+    }
+}
