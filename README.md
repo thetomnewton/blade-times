@@ -2,6 +2,10 @@
 
 A few handy date and time related Blade directives to use in your Laravel applications.
 
+## Requirements
+
+This package relies on Laravel's package auto-discovery, so it requires Laravel 5.5 or newer.
+
 ## Installation
 
 Simply run the following command in your terminal:
