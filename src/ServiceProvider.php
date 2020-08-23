@@ -4,7 +4,7 @@ namespace Thetomnewton\BladeTimes;
 
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\Facades\Date;
-use Thetomnewton\BladeTimes\BladeTimes;
+use Facades\Thetomnewton\BladeTimes\BladeTimes;
 
 class ServiceProvider extends \Illuminate\Support\ServiceProvider
 {
