@@ -15,7 +15,7 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
      */
     public function boot()
     {
-        $timezone = BladeTimes::timezone();
+        $timezone = app(BladeTimes::class)->timezone();
 
         Blade::if('until', function ($dateTime) use ($timezone) {
             return strtotime($dateTime) !== false
