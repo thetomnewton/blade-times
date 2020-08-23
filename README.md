@@ -33,3 +33,12 @@ The package automatically adds the service provider to your Laravel application.
     <div>Registration is now live! Sign up below.</div>
 @endafter
 ```
+
+## Setting the timezone
+
+We use by default the timezone set within `config/app.php`. If you wish to override this,
+in the 'boot' method of any service provider you can set your own timezone for the directives to use.
+
+```php
+BladeTimes::setTimezone('Europe/London');
+```

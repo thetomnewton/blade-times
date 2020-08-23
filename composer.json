@@ -1,6 +1,6 @@
 {
     "name": "thetomnewton/blade-times",
-    "description": "Blade directives for working with Carbon",
+    "description": "Blade directives for working with dates and times",
     "authors": [
         {
             "name": "Tom Newton",
