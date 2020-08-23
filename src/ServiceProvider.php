@@ -2,7 +2,7 @@
 
 namespace Thetomnewton\BladeTimes;
 
-use Illuminate\Support\Carbon;
+use Illuminate\Support\Facades\Date;
 use Illuminate\Support\Facades\Blade;
 
 class ServiceProvider extends \Illuminate\Support\ServiceProvider
@@ -16,24 +16,24 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
     {
         Blade::if('until', function ($dateTime) {
             return strtotime($dateTime) !== false
-                && Carbon::now()->lte(Carbon::parse($dateTime));
+                && Date::now()->lte(Date::parse($dateTime));
         });
 
         Blade::if('after', function ($dateTime) {
             return strtotime($dateTime) !== false
-                && Carbon::now()->gt(Carbon::parse($dateTime));
+                && Date::now()->gt(Date::parse($dateTime));
         });
 
         Blade::if('before', function ($dateTime) {
             return strtotime($dateTime) !== false
-                && Carbon::now()->lte(Carbon::parse($dateTime));
+                && Date::now()->lte(Date::parse($dateTime));
         });
 
         Blade::if('between', function ($before, $after) {
             return strtotime($before) !== false
                 && strtotime($after) !== false
-                && Carbon::now()->gte(Carbon::parse($before))
-                && Carbon::now()->lte(Carbon::parse($after));
+                && Date::now()->gte(Date::parse($before))
+                && Date::now()->lte(Date::parse($after));
         });
     }
 
